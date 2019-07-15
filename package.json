@@ -1,21 +1,23 @@
 {
-    "name"        : "better-trade-history",
-    "description" : "what price was bitcoin when I transacted that altcoin",
-    "license"     : "Apache-2.0",
-    "homepage"    : "https://github.com/daxxog/better-trade-history",
-    "main"        : "better-trade-history.min.js",
-    "version"     : "0.0.1",
+    "name": "better-trade-history",
+    "description": "what price was bitcoin when I transacted that altcoin",
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/daxxog/better-trade-history",
+    "main": "better-trade-history.min.js",
+    "version": "0.0.1",
     "engines": {
-        "node" : ">=4.2.4"
+        "node": ">=4.2.4"
     },
-    "maintainers": [{
-        "name"  : "David Volm",
-        "email" : "david@volminator.com",
-        "web"   : "http://daxxog.com/"
-    }],
+    "maintainers": [
+        {
+            "name": "David Volm",
+            "email": "david@volminator.com",
+            "web": "http://daxxog.com/"
+        }
+    ],
     "repository": {
-        "type" : "git",
-        "url"  : "https://github.com/daxxog/better-trade-history.git"
+        "type": "git",
+        "url": "https://github.com/daxxog/better-trade-history.git"
     },
     "devDependencies": {
         "bitfactory": "*",
@@ -35,6 +37,16 @@
         "bin/better-trade-history"
     ],
     "bin": {
-        "better-trade-history" : "bin/better-trade-history"
+        "better-trade-history": "bin/better-trade-history"
+    },
+    "dependencies": {
+        "csv-stringify": "5.3.0",
+        "mongodb": "3.2.3",
+        "mustache": "3.0.1",
+        "optimist": "0.6.1",
+        "request": "2.88.0",
+        "switch-factory": "0.0.6",
+        "underscore": "1.9.1",
+        "user-home": "2.0.0"
     }
 }
