@@ -1,0 +1,40 @@
+{
+    "name"        : "better-trade-history",
+    "description" : "what price was bitcoin when I transacted that altcoin",
+    "license"     : "Apache-2.0",
+    "homepage"    : "https://github.com/daxxog/better-trade-history",
+    "main"        : "better-trade-history.min.js",
+    "version"     : "0.0.1",
+    "engines": {
+        "node" : ">=4.2.4"
+    },
+    "maintainers": [{
+        "name"  : "David Volm",
+        "email" : "david@volminator.com",
+        "web"   : "http://daxxog.com/"
+    }],
+    "repository": {
+        "type" : "git",
+        "url"  : "https://github.com/daxxog/better-trade-history.git"
+    },
+    "devDependencies": {
+        "bitfactory": "*",
+        "stoptime": "*",
+        "uglify-js": "2.6.0",
+        "vows": "*"
+    },
+    "scripts": {
+        "build": "node make.js; cat .gitignore | grep -v better-trade-history.min.js > .npmignore",
+        "test": "vows test/*",
+        "start": "node cli.js",
+        "prepublish": "npm run build"
+    },
+    "files": [
+        "cli.min.js",
+        "better-trade-history.min.js",
+        "bin/better-trade-history"
+    ],
+    "bin": {
+        "better-trade-history" : "bin/better-trade-history"
+    }
+}
